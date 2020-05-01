@@ -9,15 +9,7 @@
             <h1><a href="">Iansong Blog</a></h1>
         </div>
 
-        <div>
-            <p>published: 01.05.2020, 12:00</p>
-            <h2><a href="">My first post</a></h2>
-            <p>하하하</p>
-        </div>
-
-        <div>
-            <p>published: 01.05.2020, 12:00</p>
-            <h2><a href="">My second post</a></h2>
-            <p>후후후.</p>
-        </div>
+        {% for post in posts %}
+          {{ post }}
+        {% endfor %}
 </html>
